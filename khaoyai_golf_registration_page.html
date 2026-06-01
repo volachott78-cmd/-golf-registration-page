@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register for KHAO YAI Golf Excellence</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0b2f22, #173f2d 45%, #d9b66f);
+      color: #fff;
+    }
+    .page {
+      min-height: 100vh;
+      padding: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card {
+      width: 100%;
+      max-width: 920px;
+      background: rgba(255,255,255,0.96);
+      color: #173f2d;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.35);
+    }
+    .hero {
+      padding: 42px 32px;
+      background: linear-gradient(135deg, #08291e, #175236);
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+    .badge {
+      display: inline-block;
+      padding: 8px 16px;
+      border: 1px solid rgba(217,182,111,0.9);
+      border-radius: 999px;
+      color: #f1d48e;
+      font-size: 13px;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(30px, 5vw, 56px);
+      line-height: 1.05;
+      letter-spacing: 1px;
+    }
+    .subtitle {
+      margin-top: 14px;
+      opacity: 0.9;
+      font-size: 17px;
+    }
+    form { padding: 32px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+    .field { display: flex; flex-direction: column; gap: 8px; }
+    label { font-weight: 700; font-size: 14px; }
+    input, select, textarea {
+      width: 100%;
+      border: 1px solid #d7d7d7;
+      border-radius: 12px;
+      padding: 13px 14px;
+      font-size: 15px;
+      outline: none;
+      background: #fff;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: #b08a3c;
+      box-shadow: 0 0 0 3px rgba(176,138,60,0.15);
+    }
+    textarea { min-height: 100px; resize: vertical; }
+    .full { grid-column: 1 / -1; }
+    .note {
+      margin-top: 14px;
+      padding: 14px;
+      border-radius: 14px;
+      background: #f7f0df;
+      color: #4a3a17;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    button {
+      margin-top: 22px;
+      width: 100%;
+      border: none;
+      border-radius: 16px;
+      padding: 16px;
+      background: linear-gradient(135deg, #163f2d, #c69b43);
+      color: white;
+      font-size: 18px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    button:disabled { opacity: 0.65; cursor: not-allowed; }
+    .success, .error {
+      display: none;
+      margin-top: 18px;
+      padding: 16px;
+      border-radius: 14px;
+      text-align: center;
+      font-weight: 700;
+    }
+    .success { background: #e4f7ec; color: #166534; }
+    .error { background: #fde8e8; color: #b91c1c; }
+    @media (max-width: 720px) {
+      .page { padding: 12px; align-items: flex-start; }
+      .hero { padding: 34px 20px; }
+      form { padding: 22px; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="card">
+      <section class="hero">
+        <div class="badge">GOLF TOURNAMENT REGISTRATION</div>
+        <h1>Register for<br />KHAO YAI Golf Excellence</h1>
+        <div class="subtitle">Luxury Golf Registration Form</div>
+      </section>
+
+      <section style="padding:32px; text-align:center;">
+        <h2 style="margin:0 0 12px; font-size:30px; color:#173f2d;">สมัครเข้าร่วมงานกอล์ฟ</h2>
+        <p style="font-size:17px; line-height:1.7; color:#334155; margin:0 auto 24px; max-width:680px;">
+          Register for KHAO YAI Golf Excellence<br />
+          กดปุ่มด้านล่างเพื่อเข้าสู่แบบฟอร์มลงทะเบียน Google Form
+        </p>
+
+        <div class="note" style="text-align:left; margin-bottom:22px;">
+          ข้อมูลการสมัครจะถูกบันทึกผ่าน Google Form และสามารถดูรายชื่อผู้สมัครได้ใน Google Sheet อัตโนมัติ
+        </div>
+
+        <a href="https://forms.gle/gFmXQRWSoSZzNL3B7" target="_blank" rel="noopener" style="display:block; width:100%; text-decoration:none; border-radius:16px; padding:18px; background:linear-gradient(135deg,#163f2d,#c69b43); color:white; font-size:20px; font-weight:800;">
+          สมัครเข้าร่วมงาน / Register Now
+        </a>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
